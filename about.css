@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+body{
+    background-color: white;
+   
+}
+
+/* Navbar */
+.Navbar{
+    position: sticky;
+    top:0px;
+    z-index: 1;
+    background-color: lab(100% 0.01 -0.01);
+}
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    align-items: center; 
+}
+.navLists{
+    list-style-type: none;
+}
+.navItem{
+    display: inline-block;
+    margin: 20px 30px;
+}
+.navLink{
+    font-size:large;
+    color: rgb(205, 12, 12);
+    text-decoration: none;
+    font-weight: bold;
+}
+.navLink:hover{
+    color: yellow;
+}
+.logoDiv img{
+    border-radius: 50%;
+}
+.borderRight{
+    width: 2px;
+    height: 50px;
+    background-color: gray;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+/* About Us section */
+.about-section {
+    position: relative;
+    height: 350px;
+    margin-bottom: 50px;
+    justify-content:center;
+    align-items:center;
+    background-image: url("/assets/aboutUs.jpg");
+    background-size: cover;
+    background-position: center;
+    /* opacity:0.4; */
+    /* border-bottom:4px solid rgb(163, 83, 13);
+    border-top:2px solid rgb(163, 83, 13); */
+     
+}
+/* center text */
+.about-section .text-center{
+    color:white;
+}
+
+/* underline */
+.line{
+    width:90px;
+    height:2px;
+    background:white;
+   
+}
+
+/* Footer */
+.yellow{
+    color:gold;
+    
+}
+.footer-text{
+    background-color: rgb(49, 47, 47);
+
+}
+.icons i{
+    border:2px solid white;
+    border-radius:50%;
+    padding:5px;
+}
+  
