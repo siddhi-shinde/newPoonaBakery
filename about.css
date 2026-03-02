@@ -51,32 +51,75 @@ nav{
 }
 
 /* About Us section */
+ .topdivline {
+    border-top: 3px solid rgb(104, 79, 64);
+    margin-bottom: 10px;
+}
+
 .about-section {
     position: relative;
     height: 350px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     justify-content:center;
     align-items:center;
     background-image: url("/assets/aboutUs.jpg");
     background-size: cover;
     background-position: center;
-    /* opacity:0.4; */
-    /* border-bottom:4px solid rgb(163, 83, 13);
-    border-top:2px solid rgb(163, 83, 13); */
-     
 }
-/* center text */
+.bottomdivline {
+    border-top: 3px solid rgb(104, 79, 64);
+    margin-top: 10px;
+}
+
 .about-section .text-center{
     color:white;
 }
-
-/* underline */
 .line{
     width:90px;
     height:2px;
     background:white;
-   
 }
+.about-Text{
+color:rgb(102, 51, 6);
+
+}
+.divider{
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right, #ccc 30%, orange 30%, orange 70%, #ccc 70%);
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: 460px;
+    margin-top: 10px;
+}
+.feature{
+    font-size: 13px;
+}
+.feature i{
+    color: #f4a300;
+    /* font-weight: bold; */
+}
+.quote-text{
+     height: 500px;
+    background-color:rgb(242, 212, 39);
+    font-size:22px;
+    margin:50px;
+   padding: 100px 150px;
+}
+.author {
+            margin-top: 60px;
+            text-align: right;
+        }
+
+        .author-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .author-title {
+            font-size: 1rem;
+        }
+
 
 /* Footer */
 .yellow{
@@ -91,5 +134,143 @@ nav{
     border:2px solid white;
     border-radius:50%;
     padding:5px;
+}
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 992px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navItem{
+        margin: 10px;
+    }
+
+    .borderRight{
+        display: none;
+    }
+
+    .about-section{
+        height: 250px;
+        text-align: center;
+    }
+
+    .divider{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .quote-text{
+        height: auto;
+        padding: 50px;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px){
+
+    .navLists{
+        text-align: center;
+    }
+
+    .navItem{
+        display: block;
+        margin: 5px;
+    }
+
+    .navLink{
+        font-size: 16px;
+    }
+
+    .about-section{
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .line{
+        margin: auto;
+    }
+
+    .divider{
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .about-Text{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .feature{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .quote-text{
+        font-size: 16px;
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .author{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-text{
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+@media (max-width: 480px){
+
+    nav{
+        margin-bottom: 1rem;
+    }
+
+    .navLink{
+        font-size: 14px;
+    }
+
+    .about-section{
+        height: 180px;
+    }
+
+    .divider{
+        width: 80px;
+    }
+
+    .quote-text{
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .author-name{
+        font-size: 1rem;
+    }
+
+    .author-title{
+        font-size: 0.8rem;
+    }
+
+    .icons i{
+        padding:3px;
+    }
+
 }
   

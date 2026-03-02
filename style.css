@@ -335,4 +335,161 @@ h4{
     border-radius:50%;
     padding:5px;
 }
+
+/* =========================
+   MEDIA QUERY - TABLET
+   ========================= */
+@media (max-width: 992px) {
+
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navItem{
+        margin: 10px;
+    }
+
+    .carousel-text1 h2,
+    .carousel-text2 h2,
+    .carousel-text3 h2,
+    .carousel-text4 h2{
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .carousel-text1 p,
+    .carousel-text3 p,
+    .carousel-text4 p{
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .feedback{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .user1 img{
+        position: relative;
+        margin: auto;
+        transform: none;
+    }
+
+    .name{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .bread-img{
+        width: 400px;
+        bottom: -300px;
+    }
+
+    .contact-box{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+}
+
+
+/* =========================
+   MEDIA QUERY - MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+    .navLists{
+        text-align: center;
+    }
+
+    .navItem{
+        display: block;
+        margin: 5px;
+    }
+
+    .borderRight{
+        display: none;
+    }
+
+    .carousel-text1 h2,
+    .carousel-text2 h2,
+    .carousel-text3 h2,
+    .carousel-text4 h2{
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+
+    .carousel-text1 p,
+    .carousel-text3 p,
+    .carousel-text4 p{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+    .circle-image{
+        width:120px;
+        height:120px;
+    }
+
+    .bread-img{
+        width: 250px;
+        bottom: -200px;
+    }
+
+    .daily-section{
+        height: 250px;
+    }
+
+    .mapSection{
+        height: 600px;
+    }
+
+    .contact-box{
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+    }
+
+}
+
+
+/* =========================
+   MEDIA QUERY - SMALL MOBILE
+   ========================= */
+@media (max-width: 480px) {
+
+    .carousel-text1 h2,
+    .carousel-text2 h2,
+    .carousel-text3 h2,
+    .carousel-text4 h2{
+        font-size: 18px;
+    }
+
+    .carousel-text1 p,
+    .carousel-text3 p,
+    .carousel-text4 p{
+        font-size: 12px;
+    }
+
+    .bread-img{
+        width: 200px;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+    .contact-box{
+        padding: 15px;
+    }
+
+}
   

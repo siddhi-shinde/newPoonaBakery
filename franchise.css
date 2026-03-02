@@ -50,6 +50,53 @@ nav{
     margin-top: 50px;
 }
 
+/* Franchise section */
+ .topdivline {
+    border-top: 3px solid rgb(104, 79, 64);
+    margin-bottom: 10px;
+}
+
+.about-section {
+    position: relative;
+    height: 350px;
+    /* margin-bottom: 50px; */
+    justify-content:center;
+    align-items:center;
+    background-image: url("/assets/aboutUs.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bottomdivline {
+    border-top: 3px solid rgb(104, 79, 64);
+    margin-top: 10px;
+}
+.about-section .text-center{
+    color:white;
+}
+.line{
+    width:90px;
+    height:2px;
+    background:white;
+}
+.about-Text{
+color:rgb(102, 51, 6);
+
+}
+.divider{
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right, #ccc 30%, orange 30%, orange 70%, #ccc 70%);
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: 460px;
+    margin-top: 10px;
+}
+/* Information Section */
+.box{
+    border:2px solid rgb(29, 28, 28);
+    padding:7px 10px;
+    margin-right:650px;
+}
 
 /* Footer */
 .yellow{
@@ -65,4 +112,121 @@ nav{
     border-radius:50%;
     padding:5px;
 }
-  
+  /* =========================
+   TABLET
+   ========================= */
+@media (max-width: 992px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navItem{
+        margin: 10px;
+    }
+
+    .borderRight{
+        display: none;
+    }
+
+    .about-section{
+        height: 250px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .divider{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box{
+        margin-right: 0;
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 768px){
+
+    .navLists{
+        text-align: center;
+    }
+
+    .navItem{
+        display: block;
+        margin: 5px;
+    }
+
+    .navLink{
+        font-size: 16px;
+    }
+
+    .about-section{
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .line{
+        margin: auto;
+    }
+
+    .divider{
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .about-Text{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .box{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer-text{
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+@media (max-width: 480px){
+
+    nav{
+        margin-bottom: 1rem;
+    }
+
+    .navLink{
+        font-size: 14px;
+    }
+
+    .about-section{
+        height: 180px;
+    }
+
+    .divider{
+        width: 80px;
+    }
+
+    .box{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .icons i{
+        padding:3px;
+    }
+
+}
